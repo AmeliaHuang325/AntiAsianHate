@@ -78,7 +78,7 @@ function draw() {
   image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 3, imgWidth, imgHeight);
   image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 4, imgWidth, imgHeight);
 
-  
+  // cube and cube bounda
   a = 12.75;
   b = 220.68;
   num = 0;
@@ -94,7 +94,6 @@ function draw() {
           stroke("#228b22");
           strokeWeight(4);
           num = num + 1; 
-          
           rect(a + 4, b + 4, cubeLength - 8, cubeLength - 8);
           image(check, a + 4, b + 4, 40, 40);
           
@@ -105,7 +104,7 @@ function draw() {
     a = 12.75;   
   }
 
-// let t;
+// verify button;
   if (t == 1){
     image(imgVarify, 494.65, 906.41, 174.3, 72.42);
   } else{
@@ -113,6 +112,7 @@ function draw() {
       image(imgSuccess, 494.65, 906.41, 174.3, 72.42);
     } else {
       image(imgVarify, 494.65, 906.41, 174.3, 72.42);
+      stroke(225);
       fill("#ff461f");
       text("Please select all matching images",  width - 400, height -80);
     }
