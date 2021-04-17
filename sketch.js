@@ -125,24 +125,34 @@ function draw() {
 
 
 function mousePressed() {
-  if (mouseY < 841.68 && mouseX < 633.75 && mouseY >= 220 && mouseX >= 12.75){
-    c = int((mouseY-220.68)/cubeLength);
-    d = int((mouseX-12.75)/cubeLength);
+  if(mouseY < (875 + imgGap / 2) && mouseY > (220.68 - imgGap/2) && mouseX < (668 + imgGap/2) && mouseX > (12.75 - imgGap/2)){
+    c = int((mouseY-(220.68 - imgGap/2))/(cubeLength + imgGap));
+    d = int((mouseX-(12.75 - imgGap/2))/(cubeLength + imgGap));
     cubes[c][d] =  cubes[c][d] * -1;
-  } else if(mouseY < 841.68 && mouseX <= 668 && mouseY >= 220 && mouseX >= 12.75) {
-    c = int((mouseY-220.68)/cubeLength );
-    d = int((mouseX-12.75)/cubeLength );
-    cubes[c][d-1] =  cubes[c][d-1] * -1;
-  } else if(mouseY <= 875 && mouseX < 633.75 && mouseY >= 220 && mouseX >= 12.75){
-    c = int((mouseY-220.68)/cubeLength);
-    d = int((mouseX-12.75)/cubeLength);
-    cubes[c-1][d] =  cubes[c-1][d] * -1;
-  } else if(mouseY <= 875 && mouseX <= 668 && mouseY >= 220 && mouseX >= 12.75){
-    c = int((mouseY-220.68)/cubeLength);
-    d = int((mouseX-12.75)/cubeLength);
-    cubes[c-1][d-1] =  cubes[c-1][d-1] * -1;
   } else if(mouseY >= 906.41 && mouseY <= 978.83 && mouseX >= 494.65 && mouseX <= 668.95){
     // let t;
     t = -1;
   }
 }
+
+  // if (mouseY < 841.68 && mouseX < 633.75 && mouseY >= 220 && mouseX >= 12.75){
+  //   c = int((mouseY-220.68)/cubeLength);
+  //   d = int((mouseX-12.75)/cubeLength);
+  //   cubes[c][d] =  cubes[c][d] * -1;
+  // } else if(mouseY < 841.68 && mouseX <= 668 && mouseY >= 220 && mouseX >= 12.75) {
+  //   c = int((mouseY-220.68)/cubeLength );
+  //   d = int((mouseX-12.75)/cubeLength );
+  //   cubes[c][d-1] =  cubes[c][d-1] * -1;
+  // } else if(mouseY <= 875 && mouseX < 633.75 && mouseY >= 220 && mouseX >= 12.75){
+  //   c = int((mouseY-220.68)/cubeLength);
+  //   d = int((mouseX-12.75)/cubeLength);
+  //   cubes[c-1][d] =  cubes[c-1][d] * -1;
+  // } else if(mouseY <= 875 && mouseX <= 668 && mouseY >= 220 && mouseX >= 12.75){
+  //   c = int((mouseY-220.68)/cubeLength);
+  //   d = int((mouseX-12.75)/cubeLength);
+  //   cubes[c-1][d-1] =  cubes[c-1][d-1] * -1;
+  // } else if(mouseY >= 906.41 && mouseY <= 978.83 && mouseX >= 494.65 && mouseX <= 668.95){
+  //   // let t;
+  //   t = -1;
+  // }
+// }
