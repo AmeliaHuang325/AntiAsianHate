@@ -12,22 +12,27 @@ function setup() {
   img_2 = loadImage("./img/image_2.jpg");
   img_3 = loadImage("./img/image_3.jpg");
   img_4 = loadImage("./img/image_4.jpg");
-  img_5 = loadImage("./img/image_5.jpg");
+  img_5 = loadImage("./img/image_5.png");
   img_6 = loadImage("./img/image_6.jpg");
-  img_7 = loadImage("./img/image_7.jpg");
+  img_7 = loadImage("./img/image_7.png");
   img_8 = loadImage("./img/image_8.jpg");
   img_9 = loadImage("./img/image_9.jpg");
   img_10 = loadImage("./img/image_10.jpg");
-  img_11 = loadImage("./img/image_11.png");
+  img_11 = loadImage("./img/image_11.jpg");
   img_12 = loadImage("./img/image_12.png");
   img_13 = loadImage("./img/image_13.png");
-  img_14 = loadImage("./img/image_14.png");
+  img_14 = loadImage("./img/image_14.jpg");
   img_15 = loadImage("./img/image_15.png");
-  img_16 = loadImage("./img/image_16.png");
-  img_17 = loadImage("./img/image_17.png");
-  img_18 = loadImage("./img/image_18.png");
-  img_19 = loadImage("./img/image_19.png");
-  img_20 = loadImage("./img/image_20.png");
+  img_16 = loadImage("./img/image_16.jpg");
+  img_17 = loadImage("./img/image_17.jpg");
+  img_18 = loadImage("./img/image_18.jpg");
+  img_19 = loadImage("./img/image_19.jpg");
+  img_20 = loadImage("./img/image_20.jpg");
+  img_21 = loadImage("./img/image_21.jpg");
+  img_22 = loadImage("./img/image_22.jpg");
+  img_23 = loadImage("./img/image_23.jpg");
+  img_24 = loadImage("./img/image_24.jpg");
+  img_25 = loadImage("./img/image_25.jpg");
   imgVarify = loadImage("./img/button1.png")
   imgSuccess = loadImage("./img/button2.png")
     
@@ -72,11 +77,11 @@ function draw() {
   image(img_18, 12.75 + (imgGap + imgHeight) * 3, 220.68 + (imgGap + imgWidth) * 2, imgWidth, imgHeight);
   image(img_19, 12.75 + (imgGap + imgHeight) * 3, 220.68 + (imgGap + imgWidth) * 3, imgWidth, imgHeight);
   image(img_20, 12.75 + (imgGap + imgHeight) * 3, 220.68 + (imgGap + imgWidth) * 4, imgWidth, imgHeight);
-  image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68, imgWidth, imgHeight);
-  image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth), imgWidth, imgHeight);
-  image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 2, imgWidth, imgHeight);
-  image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 3, imgWidth, imgHeight);
-  image(img, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 4, imgWidth, imgHeight);
+  image(img_21, 12.75 + (imgGap + imgHeight) * 4, 220.68, imgWidth, imgHeight);
+  image(img_22, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth), imgWidth, imgHeight);
+  image(img_23, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 2, imgWidth, imgHeight);
+  image(img_24, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 3, imgWidth, imgHeight);
+  image(img_25, 12.75 + (imgGap + imgHeight) * 4, 220.68 + (imgGap + imgWidth) * 4, imgWidth, imgHeight);
 
   // cube and cube bounda
   a = 12.75;
