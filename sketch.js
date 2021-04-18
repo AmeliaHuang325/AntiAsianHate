@@ -139,7 +139,3 @@ function mousePressed() {
     t = -1;
   }
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
